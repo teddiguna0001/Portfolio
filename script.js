@@ -101,12 +101,10 @@ document.addEventListener('DOMContentLoaded', function() {
           submitBtn.style.backgroundColor = '#10b981';
           contactForm.reset();
           
-          // Reset button after 3 seconds
+          // Redirect to thank you page after 1.5 seconds
           setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            submitBtn.style.backgroundColor = '';
-          }, 3000);
+            window.location.href = 'thankyou.html';
+          }, 1500);
         } else {
           // Error response from Formspree
           const errorData = await response.json();
