@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guna Teddi | Developer Portfolio</title>
+  <meta name="description" content="Portfolio website for Guna Teddi, a B.Tech computer science student and developer building web, ML, and embedded projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="navbar" aria-label="Primary">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Guna Teddi home">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="6" y="6" width="52" height="52" rx="18" stroke="currentColor" stroke-width="3"/>
+          <circle cx="32" cy="26" r="8" fill="currentColor"/>
+          <path d="M20 44C20 37 25 34 32 34C39 34 44 37 44 44" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">Guna Teddi</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="reveal visible">
+          <div class="eyebrow">B.Tech CSE Student</div>
+          <h1 class="hero-title">Building <span class="gradient-text">useful digital products</span> with code, data, and clean design.</h1>
+          <p class="hero-subtitle">I’m Guna Teddi, a developer from Visakhapatnam focused on web apps, machine learning, and practical student projects.</p>
+          <p class="hero-description">I enjoy turning ideas into responsive interfaces, automation tools, and project demos that are easy to use and easy to deploy. My work spans JavaScript, Python, GitHub, and Vercel-powered builds.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-card reveal visible">
+          <div class="profile-shell">
+            <div class="profile-card">
+              <div>
+                <div class="profile-avatar">GT</div>
+                <div class="mini-grid">
+                  <div class="mini-card"><strong>Focus</strong><br><span>Web development, ML, automation</span></div>
+                  <div class="mini-card"><strong>Stack</strong><br><span>Python, Html, CSS , JS, C</span></div>
+                </div>
+              </div>
+              <div class="mini-card">
+                <strong>Current direction</strong>
+                <p>Building portfolio-ready projects, improving deployment workflows, and exploring real-time app ideas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-copy">A concise introduction works better than generic filler. This section is written to sound like a real developer profile instead of a template.</p>
+          </div>
+        </div>
+        <div class="about-grid">
+          <article class="panel reveal">
+            <p>I’m a computer science student who likes building projects that solve clear problems, whether that means a tracking dashboard, a portfolio site, or a small automation workflow. I care about readable code, practical UI decisions, and shipping projects that can actually be shown to others.</p>
+            <div class="stats">
+              <div class="stat"><h3>Web</h3><p>Responsive interfaces and deployable projects.</p></div>
+              <div class="stat"><h3>ML</h3><p>Exploring data-driven solutions and academic projects.</p></div>
+              <div class="stat"><h3>Build</h3><p>GitHub-first workflow with Vercel deployment.</p></div>
+            </div>
+          </article>
+          <aside class="panel reveal">
+            <div class="timeline">
+              <div class="timeline-item"><strong>Education</strong><p>B.Tech student at GITAM University, Visakhapatnam.</p></div>
+              <div class="timeline-item"><strong>Interests</strong><p>Programming, machine learning, embedded systems, app development.</p></div>
+              <div class="timeline-item"><strong>Working style</strong><p>Prefer practical, low-cost tools and clean deployment pipelines.</p></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-title">Skills & Tools</h2>
+            <p class="section-copy">Group skills by how you use them. That helps recruiters and collaborators scan faster than long logo walls.</p>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <article class="panel skill-category reveal">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+            </div>
+          </article>
+          <article class="panel skill-category reveal">
+            <h3>Backend & Data</h3>
+            <div class="skill-tags">
+               <span>Python</span><span>MongoDB</span><span>Excel (connected to web page)</span><span>Numpy</span><span>Pandas</span><span>Matplotlib</span><span>seaborn</span>
+            </div>
+          </article>
+          <article class="panel skill-category reveal">
+            <h3>Developer Workflow</h3>
+            <div class="skill-tags">
+              <span>Git</span><span>GitHub</span><span>Vercel</span><span>VS Code</span><span>Google Sheets</span><span>Automation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-copy">Replace these with your real live links and GitHub URLs. The card structure is already ready for that.</p>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="mock" aria-hidden="true"><div class="mock-ui"><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cards"><span></span><span></span></div></div></div>
+            </div>
+            <div class="project-content">
+              <h3>Smart Bus Tracking System</h3>
+              <p>A comprehensive web-based solution for real-time bus tracking and management, enabling users to monitor bus locations, check schedules, and book tickets efficiently.</p>
+              <div class="project-tech"><span>HTML/CSS</span><span>JavaScript</span><span>Leapsheet Maps</span></div>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://smart-bus-tracking.vercel.app/">Preview</a>
+                <a class="btn btn-secondary" href="https://github.com/teddiguna0001/smart-bus-tracking">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="mock" aria-hidden="true"><div class="mock-ui"><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cards"><span></span><span></span></div></div></div>
+            </div>
+            <div class="project-content">
+              <h3>Employee-Database-Management</h3>
+              <p>A responsive Employee Database Management System built using HTML, CSS, and JavaScript. This project allows users to efficiently manage employee records with CRUD (Create, Read, Update, Delete) operations and stores data locally using the browser's Local Storage.</p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://employee-database-management-sandy.vercel.app/">Preview</a>
+                <a class="btn btn-secondary" href="https://github.com/teddiguna0001/smart-bus-tracking">Github Repo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="mock" aria-hidden="true"><div class="mock-ui"><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cards"><span></span><span></span></div></div></div>
+            </div>
+            <div class="project-content">
+              <h3>Ban-plastic </h3>
+              <p>This project collects feedback from users about reducing single-use plastic. All feedback submissions are stored in Google Sheets (free database solution).</p>
+              <div class="project-tech"><span>Html</span><span>CSS</span><span>Apps Script</span><span>Sheets</span></div>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://ban-plastic.vercel.app/">Preview</a>
+                <a class="btn btn-secondary" href="https://github.com/teddiguna0001/Ban-plastic">Github Repo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project 4 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="mock" aria-hidden="true"><div class="mock-ui"><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cards"><span></span><span></span></div></div></div>
+            </div>
+            <div class="project-content">
+              <h3>AI Chat Assistant</h3>
+              <p>An intelligent chatbot interface powered by NLP, designed to answer queries and assist with common tasks.</p>
+              <div class="project-tech"><span>Python</span><span>Flask</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a class="btn btn-primary" href="#contact">Try Demo</a>
+                <a class="btn btn-secondary" href="#contact">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project 5 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="mock" aria-hidden="true"><div class="mock-ui"><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cards"><span></span><span></span></div></div></div>
+            </div>
+            <div class="project-content">
+              <h3>Gaming-PUB</h3>
+              <p>A browser-based Gaming Pub built using HTML, CSS, and JavaScript, featuring 9 exciting games in one place. The project offers a clean, responsive interface with smooth navigation, allowing users to enjoy multiple games without leaving the website.</p>
+              <div class="project-tech"><span>Html</span><span>CSS</span><span>javascript</span></div>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://gaming-pub.vercel.app/">Preview</a>
+                <a class="btn btn-secondary" href="https://github.com/teddiguna0001/Gaming-PUB/tree/main">Github Repo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project 6 -->
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="mock" aria-hidden="true"><div class="mock-ui"><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cards"><span></span><span></span></div></div></div>
+            </div>
+            <div class="project-content">
+              <h3>Weather Forecast App</h3>
+              <p>A clean weather app providing real-time forecasts and interactive maps using a public weather API.</p>
+              <div class="project-tech"><span>JavaScript</span><span>API</span><span>CSS</span></div>
+              <div class="project-links">
+                <a class="btn btn-primary" href="#contact">View App</a>
+                <a class="btn btn-secondary" href="#contact">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-copy">Update the placeholders below with your actual email, LinkedIn, GitHub, and project links before publishing.</p>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <div class="panel reveal">
+            <div class="contact-list">
+              <div class="contact-item"><div class="contact-icon">@</div><div><strong><a href="mailto:teddyguna95@gmail.com">Email</a></strong><p>teddyguna95@gmail.com</p></div></div>
+              <div class="contact-item"><div class="contact-icon">in</div><div><strong><a href="https://www.linkedin.com/in/teddi-guna-90114736a?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a></strong></div></div>
+              <div class="contact-item"><div class="contact-icon">GH</div><div><strong><a href="https://github.com/teddiguna0001">GitHub</a></strong></div></div>
+            </div>
+          </div>
+          <form class="panel contact-form reveal" onsubmit="event.preventDefault(); alert('Replace this form action with Formspree, Netlify Forms, or your own backend before going live.');">
+            <div class="field"><label for="name">Your Name</label><input id="name" type="text" placeholder="Enter your name" required></div>
+            <div class="field"><label for="email">Your Email</label><input id="email" type="email" placeholder="Enter your email" required></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Write your message" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>Guna Teddi Built for internships, collaborations, and project showcases.</p>
+      <div class="socials">
+        <a href="mailto:teddyguna95@gmail.com" aria-label="Contact">✉</a>
+        <a href="https://www.linkedin.com/in/teddi-guna-90114736a?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/teddiguna0001" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
