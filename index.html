@@ -221,10 +221,19 @@
               <div class="contact-item"><div class="contact-icon">GH</div><div><strong><a href="https://github.com/teddiguna0001">GitHub</a></strong></div></div>
             </div>
           </div>
-          <form class="panel contact-form reveal" onsubmit="event.preventDefault(); alert('Replace this form action with Formspree, Netlify Forms, or your own backend before going live.');">
-            <div class="field"><label for="name">Your Name</label><input id="name" type="text" placeholder="Enter your name" required></div>
-            <div class="field"><label for="email">Your Email</label><input id="email" type="email" placeholder="Enter your email" required></div>
-            <div class="field"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Write your message" required></textarea></div>
+          <form class="panel contact-form reveal" action="https://formspree.io/f/xwvdajwq" method="POST">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="field">
+              <label for="email">Your Email</label>
+              <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
             <button class="btn btn-primary" type="submit">Send Message</button>
           </form>
         </div>
